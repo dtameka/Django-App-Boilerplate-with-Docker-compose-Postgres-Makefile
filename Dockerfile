@@ -24,3 +24,5 @@ COPY . /app/
 COPY ./entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
+
+CMD /app/manage.py runserver 0.0.0.0:8000
